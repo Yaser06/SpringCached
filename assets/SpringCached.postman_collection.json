@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "b31b8600-bb20-4993-a85f-21493e9141b6",
+		"name": "SpringCached",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8095/v1/people/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"v1",
+						"people",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveNewPeople",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Yaser\",\n    \"lastName\": \"Aktas\",\n    \"address\": \"Cumhuriyet Istanbul/Turkey\",\n    \"age\": 28\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8095/v1/people/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"v1",
+						"people",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificAge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8095/v1/people/list/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"v1",
+						"people",
+						"list",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
